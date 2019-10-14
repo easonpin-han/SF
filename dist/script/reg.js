@@ -1,0 +1,1 @@
+"use strict";define(["jquery"],function(){return{reg:function(){}}});var usernameFlag=!0,passwordFlag=!0,yzmFlag=!0;

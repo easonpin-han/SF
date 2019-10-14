@@ -1,0 +1,356 @@
+@charset "utf-8";
+body, div, td {
+    font-size: 12px;
+    font-family: "微软雅黑", Arial, Helvetica, sans-serif;
+    line-height: 1.4em;
+}
+/* ---------------header-------------- */
+.header{
+    width:1000px;
+    margin:0 auto;
+}
+a {
+    color: #515151;
+}
+.header .header_mr20{
+    margin-right: 20px;
+}
+.header span{
+    line-height:70px;
+    font-size:18px;
+    padding-left:3px;
+    font-family:"微软雅黑";
+}
+/* -----------clear---------- */
+.clear {
+    clear: both;
+    line-height: 0;
+    height: 0;
+    font-size: 0; }
+/* -----------中间内容----------- */
+.login_main{
+    width:1000px;
+    height:auto !important;
+    min-height:500px;
+    background:#fff;
+    margin:0 auto;
+}
+/* ----------左边的图片-------- */
+.login_main .pic{
+    width:540px;
+    height:390px;
+    padding-top:14px;
+    float:left;
+}
+.login_main .pic img{
+    margin-top:32px;
+}
+/* -------login------ */
+.login_main .login{
+    float:left;
+    width:400px;
+    min-height:100px;
+}
+.login_main .login_header{
+    width: 400px;
+    height:50px;
+    line-height:50px;
+    float:left;
+}
+.login_header span {
+    /* display: inline-block; */
+    color: #000;
+    font-size: 20px;
+    float: left;
+    position: relative;
+    top: 14px;
+    left: 0;
+    height: 26px;
+    line-height: 26px;
+}
+
+.login_header a{
+    float: right;
+    font-size: 14px;
+    color: #666;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 12px;
+    border-radius: 3px;
+}
+.login_main .login_box{
+    position:relative;
+    z-index:1;
+    left:0;
+    top:0px;
+    border:1px solid #ededed;
+    height:auto !important;
+    min-height:150px;
+}
+.login_box .loginnav{
+    padding:0;
+    position: absolute;
+    width:100%;
+}
+.login_box .loginnav li.edLoginLi {
+    width: 50%;
+    border-right: none;
+}
+.login_box .loginnav .curr {
+    border-bottom: 1px solid #fff;
+    border-top: 2px solid #69af05;
+    position: relative;
+    margin-top: -2px;
+}
+.login_box .loginnav li {
+    color: #666;
+    border-bottom: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+    height: 38px;
+    width: 132px;
+    float: left;
+    font-size: 14px;
+    line-height: 38px;
+    cursor: pointer;
+}
+.login_box .loginnav li .d01 {
+    border-right: 1px solid #ededed;
+    line-height: 38px;
+}
+.login_box .loginnav li em {
+    float: left;
+    margin: 10px 5px 0 24px;
+    background: url(images/loginicon.png) no-repeat;
+    width: 15px;
+    height: 15px;
+}
+.login_box .loginnav .nexpress em {
+    background-position: 0 -48px;
+}
+/* ----logincon---- */
+.login_box li span {
+    display: block;
+    position: relative;
+}
+.login_box li input {
+    width: 274px;
+    height: 20px;
+    padding: 8px 5px;
+    color: #000;
+    line-height: 20px;
+    border: 0 none;
+    float: left;
+    font-size: 13px;
+}
+.m-t14 {
+    margin-top: 14px;
+}
+.m-t45 {
+    margin-top: 45px;
+}
+/* --错误提示-- */
+.loginErroBox {
+    height: 26px;
+    line-height: 26px;
+    margin: 6px 0;
+}
+.loginErro {
+    background: #FDEFEC;
+    border: 1px solid #FFB6A9;
+    font-size: 12px;
+    color: #FF4422;
+}
+.loginErro .erroIcon {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    background: url(images/login-icon5.png) no-repeat;
+    padding-right: 11px;
+    position: relative;
+    left: 7px;
+    top: 4px;
+}
+.loginErro .erroTips {
+    display: inline-block;
+    line-height: 26px;
+}
+/* --错误提示-- */
+.login_box .phone_ul {
+    width: 348px;
+    padding: 39px 0 0 25px;
+}
+/* --------用户名------ */
+.loginPhone {
+    width: 346px;
+    height: 40px;
+    border: 1px solid #BDBDBD;
+}
+.loginPhone .phone-icon,.padPhone .phone-icon,.loginVcode .phone-icon {
+    width: 41px;
+    height: 40px;
+    float: left;
+    border-right: 1px solid #BDBDBD;
+    background: #f0f0f0;
+}
+.loginPhone .phone-icon .icon,.padPhone .phone-icon .icon,.loginVcode .phone-icon .icon {
+    background: url(images/login-icon24.png) no-repeat;
+    width: 18px;
+    height: 18px;
+    margin-left: 12px;
+    position: relative;
+    top: 12px;
+}
+.loginPhone .phone-ipt,.padPhone .phone-ipt,.loginVcode .phone-ipt {
+    width: 304px;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+}
+.loginPhone .phone-ipt input,.padPhone .phone-ipt input,.loginVcode .phone-ipt input {
+    width: 260px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 8px;
+    float: left;
+}
+/* -----密码----- */
+.padPhone {
+    width: 346px;
+    height: 40px;
+    border: 1px solid #BDBDBD;
+}
+.padPhone .phone-icon .icon {
+    background: url(images/login-icon7.png) no-repeat;
+}
+/* -------验证码------- */
+.loginVcode {
+    width: 346px;
+    height: 40px;
+    border: 1px solid #BDBDBD;
+}
+.loginVcode .phone-icon .icon {
+    background: url(images/login-icon20.png) no-repeat;
+}
+.loginVcode .phone-ipt input {
+    width: 154px;
+}
+.loginVcode .code_img {
+    width: 109px;
+    height: 38px;
+    position: relative;
+    top: 1px;
+}
+.floatright {
+    float: right;
+}
+/* -------登录----- */
+.login_box li .login_btn {
+    background: #8DC63F;
+    display: block;
+    border-radius: 4px;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+}
+/* ----手机验证码登录&忘记密码---- */
+.login_box li .phon-w1 {
+    height: 18px;
+    padding-top: 16px;
+    padding-bottom: 21px;
+}
+.login_box li .phon-w1 a {
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    color: #666;
+    font-size: 12px;
+    text-align: left;
+}
+/* -------------链接登录------------ */
+.login_box .blink {
+    width: 356px;
+    margin: 0 auto;
+    height: 48px;
+    border-top: 1px solid #EDEDED;
+    padding: 0;
+}
+.login_box .blink li {
+    width: 86px;
+    height: 20px;
+    border-right: 1px solid #ededed;
+    /* display: inline-block; */
+    margin: 10px 0;
+    float: left;
+}
+.login_box .blink li a {
+    color: #515151;
+    height: 26px;
+    line-height: 26px;
+    text-decoration: none;
+}
+.login_box .blink li .s2 {
+    position: relative;
+    top: -3px;
+    height: 16px;
+    line-height: 16px;
+    padding-top: 4px;
+}
+.login_box .blink li div {
+    text-align: center;
+}
+.login_box .blink li .s1 {
+    height: 20px;
+}
+.login_box .blink li span {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 12px;
+    color: #515151;
+}
+.login_box .blink li span i {
+    width: 20px;
+    height: 20px;
+    background: url(images/logo-icon.jpg) no-repeat;
+    display: inline-block;
+    text-align: center;
+}
+/* 微博 */
+.login_box .blink li span i.icon2 {
+    background-position: -21px 0;
+}
+/* 支付宝 */
+.login_box .blink li span i.icon4 {
+    background-position: -63px 0;
+}
+/* 微信 */
+.login_box .blink li span i.icon5 {
+    background-position: -84px 0;
+}
+/* ↓footer↓ */
+.footer {
+    width:1000px;
+    margin:0 auto;
+    padding-top:20px;
+}
+.footer span, .footer p {
+    line-height:26px;
+    margin:0 auto;
+    text-align:center;
+}
+.footer span {
+    display:block;
+    color:#176246;
+}
+.footer span a.footerlink1 {
+    color:#666;
+}
+.footer span a.footerlink1:hover {
+    text-decoration:underline;
+}
+.footer p {
+    line-height:26px;
+}

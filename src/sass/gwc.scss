@@ -1,0 +1,449 @@
+@charset "utf-8";
+#header {
+    padding: 0;
+    height: 104px;
+    width: 1000px;
+    margin: 0 auto;
+}
+.header_inner {
+    width: 1000px;
+    margin: auto;
+    position: relative;
+    z-index: 31;
+}
+.header_inner .logo {
+    width: 240px;
+    margin: 0px;
+    float: left;
+    padding: 5px 0px 0px 0px;
+    position: relative;
+}
+.header_inner .right {
+    float:right;
+    width:650px;
+    padding-top:30px;
+}
+/* cartMain */
+.cartMain {
+    width: 1000px;
+    margin: 0 auto;
+}
+.cartHead {
+    padding: 0 0 10px 0;
+}
+.cartMy {
+    float: left;
+    font-family: 微软雅黑;
+    font-size: 20px;
+    line-height: 26px;
+}
+.areaShow {
+    float: left;
+}
+.cartHead .toTxt {
+    font-size: 14px;
+}
+/* 地区选择 */
+#store-selector {
+    float: left;
+    height: 26px;
+    margin-right: 6px;
+    position: relative;
+    z-index: 91;
+}
+#store-selector .text {
+    width: auto;
+    height: 25px;
+    background: #FFFFFF;
+    border: 1px solid #CECBCE;
+    /* border-bottom: 0 none; */
+    line-height: 23px;
+    padding: 0 20px 0 4px;
+    float: left;
+    position: relative;
+    top: 0;
+    font-size: 12px;
+    overflow: hidden;
+    max-width: 500px;
+    z-index: 1;
+}
+/* #store-selector .text b {
+    background: url(images/indexImg20130307.png) no-repeat -401px -2px;
+    display: block;
+    height: 24px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 17px;
+} */
+/* 地区选择弹出框 */
+#store-selector .content {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CECBCE;
+    box-shadow: 0 0 5px #DDDDDD;
+    display: none;
+    left: -45px;
+    padding: 15px;
+    position: absolute;
+    top: 25px;
+    width: 390px; 
+}
+#store-selector:hover .content {
+    display: block;
+}
+.stock {
+    position: relative;
+    font-size: 12px;
+}
+.m,.mt.mc {
+    overflow: hidden;
+}
+.mt {
+    cursor: default;
+}
+.stock .tab {
+    border-bottom: 1px solid #176246;
+    float: left;
+    height: 25px;
+    overflow: visible;
+    width: 100%;
+}
+#store-selector .tab li {
+    clear: none;
+    float: left;
+    padding: 0;
+}
+.stock .tab a {
+    font-size: 12px;
+    color: #9e9e9e;
+    border-top: 1px solid #DDDDDD;
+    border-left: 1px solid #DDDDDD;
+    border-right: 1px solid #DDDDDD;
+    cursor: pointer;
+    float: left;
+    height: 23px;
+    line-height: 23px;
+    margin-right: 3px;
+    padding: 0 21px 1px 11px;
+    position: relative;
+    text-align: center;
+}
+.stock .tab a:hover {
+    background-color: #FFFFFF;
+    border-top: 1px solid #176246;
+    border-left: 1px solid #176246;
+    border-right: 1px solid #176246;
+    color: #176246;
+    height: 25px;
+    line-height: 22px;
+    padding: 0 20px 0 10px;
+}
+.stock .tab a i {
+    background: url(images/sf-stock.png) no-repeat 0 -35px;
+    display: block;
+    height: 5px;
+    overflow: hidden;
+    position: absolute;
+    right: 4px;
+    top: 10px;
+    width: 7px;
+}
+/* 地区列表 */
+.area-list {
+    padding-top: 5px;
+}
+.area-list li {
+    clear: none;
+    float: left;
+    padding: 2px 0 2px 15px;
+    width: 80px;
+    font-size: 12px;
+}
+.area-list li a {
+    float: left;
+    padding: 2px 4px;
+    color: #565656;
+}
+.area-list li a:hover {
+    background-color: #176246;
+    color: #fff;
+}
+/* 提示信息 */
+.areatips {
+    line-height: 26px;
+    margin-left: 10px;
+}
+.clear {
+    clear: both;
+    padding: 0px;
+    font-size: 0px;
+    margin: 0px;
+    height: 0px;
+    display: block;
+    border: none;
+    overflow: hidden;
+}
+/* ------------中间购物车商品------------ */
+/* carthead */
+.cartMain {
+    width: 1000px;
+    margin: 0 auto;
+}
+.cartThead {
+    overflow: hidden;
+}
+.tCol {
+    float: left;
+    height: 34px;
+    line-height: 34px;
+    background-color: #81A84A;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+.tCheckbox {
+    width: 70px;
+}
+.tCheckbox input {
+    vertical-align: middle;
+}
+.tGoods {
+    width: 280px;
+}
+.tPrice {
+    width: 100px;
+}
+.tPromotion {
+    width: 100px;
+}
+.tQuantity {
+    width: 90px;
+}
+.tWeight {
+    width: 100px;
+}
+.tSubtotal {
+    width: 100px;
+}
+.tInventory {
+    width: 70px;
+}
+.tOperator {
+    width: 90px;
+}
+/* 产品列表 */
+#prodList {
+    min-height: 50px;
+}
+.cartColumnhd {
+    background-color: #f2f6ed;
+    height: 25px;
+    line-height: 25px;
+    padding: 5px 10px;
+}
+.cartCheckbox {
+    color: #565656;
+    font-size: 12px;
+    font-weight: bold;
+}
+.cartCheckbox input {
+    vertical-align: middle;
+    margin: 0 5px;
+}
+.cartPInfo {
+    overflow: hidden;
+    padding: 20px 0;
+    border-bottom: 1px solid #EBF7EF;
+}
+.clearit {
+    overflow: hidden;
+}
+/* ----------------- */
+.pItem {
+    position: relative;
+    float: left;
+    color: #6B6B6B;
+    text-align: center;
+    line-height: 20px;
+}
+.pCheckbox {
+    width: 70px;
+    padding: 20px 0 0 0;
+}
+.pGoods {
+    width: 280px;
+    text-align: left;
+}
+.price {
+    padding-top: 10px;
+    width: 100px;
+    float: left;
+}
+.pPromotion {
+    width: 100px;
+}
+.pQuantity {
+    width: 90px;
+}
+.pWeight {
+    width: 100px;
+}
+.pSubtotal {
+    width: 100px;
+    color: #EA5404;
+    font-weight: bold;
+}
+.pInventory {
+    width: 70px;
+}
+.pOperator {
+    position: static;
+    width: 90px;
+}
+/* ----------------- */
+.pCheckbox input {
+    vertical-align: middle;
+}
+.clearfix {
+    display: block;
+}
+.cart_pimg {
+    border: 1px solid #EEEEEE;
+    float: left;
+    height: 60px;
+    margin-right: 10px;
+    overflow: hidden;
+    width: 60px;
+}
+.cart_pimg a img {
+    width:62px;
+    height:62px;
+}
+.cart_pname {
+    color: #6B6B6B;
+    line-height: 20px;
+    overflow: hidden;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.price span {
+    display: block;
+    line-height: 20px;
+}
+.cartAmount {
+    margin: 1px auto;
+    width: 55px;
+    height: 18px;
+    overflow: hidden;
+}
+/* 数量加减按钮 */
+a.cartCountBtn, a.cartCountBtn:hover {
+    background-color: #eeeeee;
+    color: #7d7d7d;
+    cursor: pointer;
+    display: inline-block;
+    height: 12px;
+    line-height: 12px;
+    margin: 1px 0 0 0;
+    text-decoration: none;
+    width: 10px;
+}
+a.cartCountBtn, a.cartCountBtn:hover, input.amount {
+    float: left;
+    font-size: 12px;
+    vertical-align: middle;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #cacaca;
+    overflow: hidden;
+    text-align: center;
+}
+/*  */
+input.amount {
+    float: left;
+    width: 25px;
+    height: 14px;
+    line-height: 14px;
+    font-size: 12px;
+    color: #6B6B6B;
+    overflow: hidden;
+    padding: 0;
+    margin: 0 2px;
+    text-align: center;
+    vertical-align: middle;
+}
+/* 删除选中的商品/清空购物车 */
+.cartOrderCount {
+    margin-top: 10px;
+    border-top: 1px solid #dadada;
+    overflow: hidden;
+}
+.cartCountItem {
+    height: 48px;
+    border-left: 1px solid #dadada;
+    border-right: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+}
+.cartButtons {
+    float: left;
+    width: 300px;
+    padding: 5px 0;
+}
+.cartclear {
+    background: url(images/cartbg.gif) no-repeat scroll 0 -105px;
+    border: 0;
+    color: #6B6B6B;
+    cursor: pointer;
+    height: 18px;
+    line-height: 18px;
+    margin: 10px;
+    overflow: hidden;
+    padding: 0 0 0 15px;
+    text-align: left;
+    width: 110px;
+}
+.cartTotalItem {
+    float: right;
+    width: 600px;
+    text-align: right;
+    line-height: 38px;
+    padding: 3px 10px 0 0;
+}
+.cartTitle {
+    margin-left: 30px;
+}
+.cartPrice {
+    color: #EA5404;
+    font-size: 22px;
+}
+/* 商品结算 */
+.cartJsuan {
+    text-align: right;
+    padding: 10px;
+}
+.goshop {
+    background: url(images/header.png) no-repeat 0 -225px;
+    height: 28px;
+    width: 73px;
+    border: 1px solid #a5cf69;
+    color: #666666;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+}
+.jiesuan {
+    background: #6e9b0c;
+    height: 45px;
+    width: 150px;
+    border: 0;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}

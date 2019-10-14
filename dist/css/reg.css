@@ -1,0 +1,264 @@
+@charset "UTF-8";
+/* -------↓header-------- */
+.header {
+  width: 1000px;
+  /*height:75px;*/
+  margin: 0 auto;
+}
+
+a {
+  color: #515151;
+}
+
+.header img, .header span {
+  margin: 10px 0;
+  float: left;
+}
+
+.header span {
+  line-height: 70px;
+  font-size: 24px;
+  padding-left: 3px;
+  font-family: "微软雅黑";
+}
+
+/* -------↑header-------- */
+/* -----个人用户&已有账号立即登录------- */
+.clear {
+  clear: both;
+  line-height: 0;
+  height: 0;
+  font-size: 0;
+}
+
+.tabBox {
+  width: 666px;
+  margin: 0 auto;
+  padding-left: 333px;
+  height: 37px;
+}
+
+.tabBox span {
+  display: block;
+  float: left;
+  text-align: center;
+}
+
+.tabBox .regper {
+  cursor: pointer;
+  position: relative;
+  top: 1px;
+  width: 163px;
+  height: 38px;
+  line-height: 38px;
+  font-size: 14px;
+  font-family: "微软雅黑";
+  background: url(../img/tabbg.jpg) left top no-repeat;
+}
+
+.tabBox .login {
+  width: 130px;
+  float: right;
+  padding-top: 14px;
+  font-size: 12px;
+  color: #565656;
+}
+
+.tabBox .login a {
+  color: #6e9b0c;
+}
+
+/* -----------中间内容----------- */
+.reg_main {
+  border-top: 1px solid #d6d5d5;
+  padding: 45px 0 0 40px;
+  width: 960px;
+  height: auto !important;
+  min-height: 490px;
+  background: #fff;
+  margin: 0 auto;
+}
+
+/* ↓背景图片↓ */
+.reg_main ul.userBg {
+  background: url(../img/userbg.jpg) 460px 0px no-repeat;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.reg_main ul.userBg li {
+  height: 38px;
+}
+
+/* 底部30px */
+.regMb30 {
+  margin-bottom: 30px;
+}
+
+/* ↓左边的*和文字↓ */
+.reg_main li label {
+  width: 118px;
+  font-size: 14px;
+  color: #515151;
+  height: 38px;
+  line-height: 38px;
+  text-align: right;
+}
+
+.reg_main li label, .regM {
+  display: block;
+  float: left;
+}
+
+.reg_main li label font {
+  color: #ff4800;
+}
+
+/* ↓输入框外面的框↓ */
+.reg_main li .regM {
+  width: 268px;
+  height: 36px;
+  line-height: 36px;
+  border: 1px solid #cdcdcd;
+}
+
+/* ↓输入框↓ */
+.reg_main li .regInput {
+  display: block;
+  float: left;
+  width: 228px;
+  height: 36px;
+  line-height: 36px;
+  border: none;
+  color: #515151;
+  padding: 0 5px;
+}
+
+/* ↓安全程度li↓ */
+.reg_main .safetyLayer {
+  height: 28px;
+  color: #666;
+  padding-top: 5px;
+  padding-left: 191px;
+}
+
+.reg_main .safetyLayer font, em {
+  display: block;
+  float: left;
+}
+
+.reg_main .safetyLayer font {
+  font-size: 12px;
+}
+
+.reg_main .safetyLayer em {
+  text-align: center;
+  width: 34px;
+  margin-right: 2px;
+  color: #fff;
+  background: #c4c4c4;
+}
+
+/* ↓验证码输入框外框↓ */
+.reg_main li .regCodeInput {
+  float: left;
+  padding: 0 5px;
+  width: 58px;
+  height: 36px;
+}
+
+/* ↓验证码右边的图片↓ */
+.regMl6 {
+  margin-left: 6px;
+  float: left;
+  width: 106px;
+  height: 36px;
+}
+
+/* ↓看不清？换一换↓ */
+.reg_main li .codeTitle {
+  width: 86px;
+  line-height: 36px;
+}
+
+.reg_main li .codeTitle a, .reg_main li .checkTitle font {
+  color: #6e9b0c;
+}
+
+/* 阅读用户协议 */
+.regPl88 {
+  padding-left: 88px;
+}
+
+.checkTitle:hover {
+  text-decoration: underline;
+}
+
+/* ↓立即注册↓ */
+.regMt10 {
+  margin-top: 10px;
+}
+
+.reg_main .registerNow {
+  display: block;
+  float: left;
+  width: 271px;
+  height: 38px;
+  line-height: 38px;
+  background: url(../img/reg_btn.jpg) left top no-repeat;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  margin-right: 20px;
+}
+
+.reg_main .registerNow:hover {
+  background-position: 0 -38px;
+}
+
+/* ↓了解更多↓ */
+.ui-reg-tip {
+  padding: 15px 10px 10px 45px;
+  border-top: 1px dotted #dcdcdc;
+  position: relative;
+  left: -30px;
+  width: 930px;
+  background: url(../img/reg_tip.png) no-repeat 25px 16px;
+}
+
+.ui-reg-tip a {
+  color: #669900;
+}
+
+/* ↓footer↓ */
+.footer {
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.footer span, .footer p {
+  line-height: 26px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer span {
+  display: block;
+  color: #176246;
+}
+
+.footer span a.footerlink1 {
+  color: #666;
+}
+
+.footer span a.footerlink1:hover {
+  text-decoration: underline;
+}
+
+.footer p {
+  line-height: 26px;
+}
+
+/*# sourceMappingURL=reg.css.map */

@@ -1,0 +1,1557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>顺丰优选商城</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/public.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/require.js/2.1.22/require.js" defer async="true" data-main="./script/main.js"></script>
+
+</head>
+
+<body>
+    <!------------------------------------- 顶部banner -------------------------------->
+    <div class="topbanner">
+        <div class="banner">
+            <a name="" href="" target="">蟹闯天下 顺丰领鲜</a>
+        </div>
+        <span class="topclose">关闭</span>
+    </div>
+    <!------------------------------------- 顶部导航条 -------------------------------->
+    <div class="topMenu">
+        <div class="menu">
+            <ul class="f_left topTh">
+                <li class="d1">冷链配送 顺丰到家 送至：</li>
+                <li class="d6 tShow" id="currentCityName">
+                    <p class="pshort">
+                        <span class="city_title1">杭州</span>
+                        <!-- 城市选择…… -->
+                        <b></b>
+                    </p>
+                </li>
+            </ul>
+            <ul class="f_right topTh">
+                <li class="login">
+                    嘿，欢迎来顺丰优选！
+                    <a href="">请登录</a>
+                    |&nbsp;
+                    <div class="newregbox">
+                        <a href="">免费注册</a>
+                        <div class="newregdiv">
+                            <span class="up-icon"></span>
+                            <span class="newregTips"><em class="newwords">新注册会员送200元券包</em></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="myOrder">
+                    <a href="" class="trackref">我的订单</a>
+                </li>
+                <li class="menus">
+                    <a href="" class="trackref t">我的优选</a><b></b>
+                    <span class="outline"></span>
+                    <span class="blank"></span>
+                    <div class="dd">
+                        <div><a class="trackref" href="">我的订单</a></div>
+                        <div><a class="trackref" href="">我的积分</a></div>
+                        <div><a class="trackref" href="">我的收藏</a></div>
+                        <div><a href="">我的优选卡</a></div>
+                        <div><a href="">我的优惠券</a></div>
+                    </div>
+                </li>
+                <li class="d2 tShow">
+                    <s></s><q></q>
+                    <a class="trackref" href="">移动客户端</a>
+                    <div class="dd">
+                        <div class="sf-client">
+                            <span class="client-img"></span>
+                            <i></i>
+                            <div class="client-txt">
+                                <em>扫描我，即可下载</em>
+                                <strong>顺丰优选客户端</strong>
+                            </div>
+                        </div>
+                        <div class="app-btn">
+                            <a class="app-apple" href=""></a>
+                            <a class="app-android" href=""></a>
+                        </div>
+                        <div class="client-promo">
+                            <a class="trackref" href=""></a>
+                        </div>
+                    </div>
+                    <div class="corner">
+                        <div class="aBg"></div>
+                        <div class="aCt"></div>
+                    </div>
+                </li>
+                <li class="myOrder">
+                    <a class="trackref" href="">在线客服</a>
+                </li>
+                <li class="menus">
+                    <a href="" class="trackref t">帮助中心</a>
+                    <b></b>
+                    <span class="outline"></span>
+                    <span class="blank"></span>
+                    <div class="dd">
+                        <div><a class="trackref" href="">购物指南</a></div>
+                        <div><a class="trackref" href="">配送服务</a></div>
+                        <div><a class="trackref" href="">支付方式</a></div>
+                        <div><a class="trackref" href="">售后服务</a></div>
+                        <div><a class="trackref" href="">客服邮箱</a></div>
+                        <div><a class="trackref" href="">投诉与建议</a></div>
+                    </div>
+                    <!--  -->
+                </li>
+                <li class="allCat">
+                    <em class="site">网站导航</em>
+                    <s></s>
+                    <span class="outline"></span>
+                    <span class="blank"></span>
+                    <div class="dd">
+                        <dl>
+                            <dt class="dh1">商品分类</dt>
+                            <dd>
+                                <a class="trackref" href="">肉类海鲜</a>
+                                <a class="trackref" href="">新鲜果蔬</a>
+                                <a class="trackref" href="">速食冷藏</a>
+                                <a class="trackref" href="">酒水饮料</a>
+                                <a class="trackref" href="">休闲糖巧</a>
+                                <a class="trackref" href="">粮油干货</a>
+                                <a class="trackref" href="">冲调茶饮</a>
+                                <a class="trackref" href="">优选国际</a>
+                            </dd>
+                        </dl>
+                        <dl class="line"></dl>
+                        <dl>
+                            <dt class="dh2">特色频道</dt>
+                            <dd>
+                                <a class="trackref" href="">跨境直发</a>
+                                <a class="trackref" href="">企业专区</a>
+                                <a class="trackref" href="">红酒廊</a>
+                                <a class="trackref" href="">寰宇美食</a>
+                            </dd>
+                        </dl>
+                        <dl class="line"></dl>
+                        <dl>
+                            <dt class="dh3">更多</dt>
+                            <dd>
+                                <a class="trackref" href="">客户端</a>
+                                <a class="trackref" href="">关注我们</a>
+                                <p>客服电话：9533858</p>
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+                <li class="d3 tShow">
+                    <a class="trackref" title="关注顺丰优选微博" href=""><q></q></a>
+                </li>
+                <li class="d4 tShow">
+                    <!-- 微信 -->
+                    <q></q>
+                    <div class="dd">
+                        <div class="sf_wx_t">关注顺丰优选微信</div>
+                        <div class="sf_wx"></div>
+                    </div>
+                    <div class="corner">
+                        <div class="aBg"></div>
+                        <div class="aCt"></div>
+                    </div>
+                </li>
+            </ul>
+            <span class="clear"></span>
+        </div>
+    </div>
+    <!------------------------------------- ↑顶部导航条↑ ------------------------------>
+
+
+    <!------------------------------------- ↓header↓ --------------------------------->
+    <div id="header">
+        <div class="header_inner">
+            <div class="logo">
+                <a href="http://www.sfbest.com" class="trackref" title="顺丰优选">
+                    <img src="http://i.sfimg.cn/html/images/indexLogo2019.png" class="index_logo">
+                </a>
+            </div>
+            <div class="search">
+                <form id="searchForm">
+                    <input type="text" id="keyword" class="text keyword ac_input" placeholder="松茸">
+                    <input type="button" value="" class="submit">
+                </form>
+                <div class="search_hot">
+                    <a target="_blank" href="">小龙虾</a>
+                    <a target="_blank" href="">大闸蟹</a>
+                    <a target="_blank" href="">牛排</a>
+                    <a target="_blank" href="">榴莲</a>
+                    <a target="_blank" href="">牛奶</a>
+                    <a target="_blank" href="">大米</a>
+                    <a target="_blank" href="">白酒</a>
+                    <a target="_blank" href="">虾</a>
+                    <a target="_blank" href="">手机</a>
+                </div>
+            </div>
+            <div class="shopingcar" id="topCart">
+                <s class="setCart"></s>
+                <a href="" class="t">我的购物车</a>
+                <b id="cartNum">0</b>
+                <span class="outline"></span>
+                <span class="blank"></span>
+                <div id="cart_lists">
+                    <div class="floatcar" id="cat_form13">
+                        <div class="btnhover"></div>
+                        <div class="btnhover"></div>
+                        <div class="floatcar1" id="cat_form13">
+                            <div class="nopro">
+                                <p>购物车中暂无商品</p>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------------------- ↑header↑ --------------------------------->
+
+    <!------------------------------------- ↓mainNav↓ --------------------------------->
+    <div class="mainNav">
+        <div class="navmenu">
+            <div class="categories hover">
+                <div class="dt">
+                    <a class="trackref topall" href="javascript:;">精选商品分类</a>
+                </div>
+                <div id="allSort" class="dd">
+                    <div id="booksort">
+                        <div class="item">
+                            <span class="i-master">
+                                <h3 class="dev">
+                                    <p class="fresh"></p>
+                                    <a class="trackref" href="">肉类海鲜</a>
+                                </h3>
+                                <ul class="subCat">
+                                    <li><a href="" class="trackref">牛肉</a></li>
+                                    <li><a href="" class="trackref">羊肉</a></li>
+                                    <li><a href="" class="trackref">参鲍</a></li>
+                                    <li><a href="" class="trackref">鱼</a></li>
+                                </ul>
+                                <s></s>
+                            </span>
+                            <div class="i-cm">
+                                <div class="i-left">
+                                    <div class="cat-sort">
+                                        <dl>
+                                            <dt><strong><a class="trackref" href="">精品肉类</a></strong></dt>
+                                            <dd>
+                                                <a class="trackref" href="">牛肉</a>
+                                                <a class="trackref" href="">羊肉</a>
+                                                <a class="trackref" href="">猪肉</a>
+                                                <a class="trackref" href="">禽类</a>
+                                                <a class="trackref" href="">加工肉类</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt><strong><a class="trackref" href="">海鲜水产</a></strong></dt>
+                                            <dd>
+                                                <a class="trackref" href="">虾</a>
+                                                <a class="trackref" href="">鱼</a>
+                                                <a class="trackref" href="">蟹/贝类</a>
+                                                <a class="trackref" href="">参鲍</a>
+                                                <a class="trackref" href="">加工水产</a>
+                                                <a class="trackref" href="">其他水产</a>
+                                                <a class="trackref" href="">水产礼盒</a>
+                                                <a class="trackref" href="">卡券</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt><strong><a class="trackref" href="">季节性食品</a></strong></dt>
+                                            <dd>
+                                                <a class="trackref" href="">大闸蟹</a>
+                                                <a class="trackref" href="">小龙虾</a>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="i-img">
+                                        <a href="">
+                                            <img src="https://ps.sfimg.cn/article/1570674351.jpg">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="i-right">
+                                    <span class="i-close"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <span class="i-master">
+                                <h3 class="dev">
+                                    <p class="pastry"></p>
+                                    <a class="trackref" href="">新鲜果蔬</a>
+                                </h3>
+                                <ul class="subCat">
+                                    <li><a href="">柑橘橙</a></li>
+                                    <li><a href="">猕猴桃</a></li>
+                                    <li><a href=""> 蔬菜</a></li>
+                                </ul>
+                                <s></s>
+                            </span>
+                            <div class="i-cm">
+                                <div class="i-left">
+                                    <div class="cat-sort">
+                                        <dl>
+                                            <dt><strong><a class="trackref" href="">水果</a></strong></dt>
+                                            <dd>
+                                                <a class="trackref" href="">柑橘橙</a>
+                                                <a class="trackref" href="">柠檬</a>
+                                                <a class="trackref" href="">柚</a>
+                                                <a class="trackref" href="">瓜类</a>
+                                                <a class="trackref" href="">梨</a>
+                                                <a class="trackref" href="">芒果</a>
+                                                <a class="trackref" href="">牛油果</a>
+                                                <a class="trackref" href="">苹果/桃</a>
+                                                <a class="trackref" href="">杏/李/梅</a>
+                                                <a class="trackref" href="">枣</a>
+                                                <a class="trackref" href="">椰子</a>
+                                                <a class="trackref" href="">火龙果</a>
+                                                <a class="trackref" href="">猕猴桃/奇异果</a>
+                                                <a class="trackref" href="">石榴</a>
+                                                <a class="trackref" href="">龙眼</a>
+                                                <a class="trackref" href="">香蕉</a>
+                                                <a class="trackref" href="">其他水果</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt><strong><a class="trackref" href="">蔬菜</a></strong></dt>
+                                            <dd>
+                                                <a class="trackref" href=""> 根茎类</a>
+                                                <a class="trackref" href="">叶菜类</a>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="i-img"><a href="">
+                                        <img src="https://ps.sfimg.cn/article/1570674351.jpg"></a></div>
+                                </div>
+                                <div class="i-right"> <span class="i-close"></span></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <span class="i-master">
+                                <h3 class="dev">
+                                    <p class="baby"></p>
+                                    <a href="" class="trackref">速食冷藏</a>
+                                </h3>
+                                <ul class="subCat">
+                                    <li><a href="">速冻食品
+                                        </a></li>
+                                    <li><a href="">蛋
+                                        </a></li>
+                                    <li><a href="">冷
+                                            冻甜点</a></li>
+                                </ul>
+                                <s></s>
+                            </span>
+                            <div class="i-cm">
+                                <div class="i-left">
+                                    <div class="cat-sort">
+                                        <dl>
+                                            <dt><strong><a class="trackref" href="">肉类熟食</a></strong></dt>
+                                            <dd>
+                                                <a class="trackref" href="">香肠</a>
+                                                <a class="trackref" href="">火腿</a>
+                                                <a class="trackref" href="">培根</a>
+                                                <a class="trackref" href="">其他熟食</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt><strong><a class="trackref" href="">主食面点</a></strong></dt>
+                                            <dd>
+                                                <a class="trackref" href="">包点/饼类/面条</a>
+                                                <a class="trackref" href="">饺子/馄饨/云吞</a>
+                                                <a class="trackref" href="">汤圆</a>
+                                                <a class="trackref" href="">披萨/派</a>
+                                                <a class="trackref" href="">煎炸</a>
+                                                <a class="trackref" href="">简餐/汤食</a>
+                                                <a class="trackref" href="">其它速冻品</a>
+                                                <a class="trackref" href="">粽子</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt><strong><a class="trackref" href="">奶制品</a></strong></dt>
+                                            <dd>
+                                                <a class="trackref" href="">加工奶酪</a>
+                                                <a class="trackref" href="">儿童奶酪</a>
+                                                <a class="trackref" href="">无盐黄油</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt><strong> <a class="trackref" href="">冷藏食品</a></strong></dt>
+                                            <dd>
+                                                <a class="trackref" href="">低温果汁</a>
+                                                <a class="trackref" href="">低温饮料</a>
+                                                <a class="trackref" href="">年糕</a>
+                                                <a class="trackref" href="">其他低温品</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <strong>
+                                                    <a class="trackref" href="">速食冰品</a>
+                                                </strong>
+                                            </dt>
+                                            <dd>
+                                                <a class="trackref" href="">冰淇淋</a>
+                                                <a class="trackref" href="">冷冻蛋糕</a>
+                                                <a class="trackref" href="">水果甜点</a>
+                                                <a class="trackref" href="">冰淇淋券</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <strong>
+                                                    <a class="trackref" href="">蛋品</a>
+                                                </strong>
+                                            </dt>
+                                            <dd>
+                                                <a class="trackref" href="">鲜蛋类（鸡鸭鹅）</a>
+                                                <a class="trackref" href="">咸蛋/皮蛋类</a>
+                                                <a class="trackref" href="">其他蛋类</a>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="i-img"><a href=""><img
+                                                src="https://ps.sfimg.cn/article/1570674351.jpg"></a></div>
+                                </div>
+                                <div class="i-right">
+                                    <span class="i-close"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <span class="i-master">
+                                <h3 class="dev">
+                                    <p class="drinks"></p>
+                                    <a class="trackref" href="">酒水饮料</a>
+                                </h3>
+                                <ul class="subCat">
+                                    <li><a href="" class="trackref">葡萄酒</a></li>
+                                    <li><a href="" class="trackref">啤酒</a></li>
+                                    <li><a href="" class="trackref">白酒</a></li>
+                                    <li><a href="" class="trackref">牛奶</a></li>
+                                </ul>
+                                <s></s>
+                            </span>
+                            <div class="i-cm">
+                                <div class="i-left">
+                                    <div class="cat-sort">
+                                        <dl>
+                                            <dt>
+                                                <strong>
+                                                    <a class="trackref" href="">葡萄酒</a>
+                                                </strong>
+                                            </dt>
+                                            <dd>
+                                                <a class="trackref" href="">红葡萄酒</a>
+                                                <a class="trackref" href="">白葡萄酒</a>
+                                                <a class="trackref" href="">桃红葡萄酒</a>
+                                                <a class="trackref" href="">甜葡萄酒</a>
+                                                <a class="trackref" href="">香槟/起泡酒</a>
+                                                <a class="trackref" href="">名庄酒</a>
+                                                <a class="trackref" href="">礼盒</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <strong>
+                                                    <a class="trackref" href="">洋酒</a>
+                                                </strong>
+                                            </dt>
+                                            <dd>
+                                                <a class="trackref" href="">威士忌</a>
+                                                <a class="trackref" href="">伏特加</a>
+                                                <a class="trackref" href="">白兰地</a>
+                                                <a class="trackref" href="">利口酒</a>
+                                                <a class="trackref" href="">朗姆酒</a>
+                                                <a class="trackref" href="">预调酒</a>
+                                                <a class="trackref" href="">梅子酒</a>
+                                                <a class="trackref" href="">果酒</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <strong>
+                                                    <a class="trackref" href="">啤酒</a>
+                                                </strong>
+                                            </dt>
+                                            <dd>
+                                                <a class="trackref" href="">黑啤</a>
+                                                <a class="trackref" href="">黄啤</a>
+                                                <a class="trackref" href="">白啤</a>
+                                                <a class="trackref" href="">鲜啤</a>
+                                                <a class="trackref" href="">果味啤酒</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <strong>
+                                                    <a class="trackref" href="">白酒</a>
+                                                </strong>
+                                            </dt>
+                                            <dd>
+                                                <a class="trackref" href="">酱香型</a>
+                                                <a class="trackref" href="">浓香型</a>
+                                                <a class="trackref" href="">清香型</a>
+                                                <a class="trackref" href="">其他白酒</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <strong>
+                                                    <a class="trackref" href="">其他酒品</a>
+                                                </strong>
+                                            </dt>
+                                            <dd>
+                                                <a class="trackref" href="">滋补酒</a>
+                                                <a class="trackref" href="">黄酒</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <strong>
+                                                    <a class="trackref" href="">安心乳品</a>
+                                                </strong>
+                                            </dt>
+                                            <dd>
+                                                <a class="trackref" href="">牛奶</a>
+                                                <a class="trackref" href="">豆奶</a>
+                                                <a class="trackref" href="">常温酸奶</a>
+                                                <a class="trackref" href="">低温酸奶</a>
+                                                <a class="trackref" href="">低温保鲜奶</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <strong>
+                                                    <a class="trackref" href="">果汁/饮料/水</a>
+                                                </strong>
+                                            </dt>
+                                            <dd>
+                                                <a class="trackref" href="">果蔬饮料</a>
+                                                <a class="trackref" href="">纯果汁</a>
+                                                <a class="trackref" href="">茶饮料</a>
+                                                <a class="trackref" href="">咖啡饮料</a>
+                                                <a class="trackref" href="">乳酸菌</a>
+                                                <a class="trackref" href="">水</a>
+                                                <a class="trackref" href="">其他饮料</a>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="i-img">
+                                        <a href="">
+                                            <img src="https://ps.sfimg.cn/article/1570674351.jpg">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="i-right">
+                                    <span class="i-close"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <span class="i-master">
+                                <h3 class="dev">
+                                    <p class="food"></p>
+                                    <a class="trackref" href="">休闲糖巧</a>
+                                </h3>
+                                <ul class="subCat">
+                                    <li><a href="" class="trackref">巧克力</a></li>
+                                    <li><a href="" class="trackref">坚果</a></li>
+                                    <li><a href="" class="trackref">曲奇</a></li>
+                                </ul>
+                                <s></s>
+                            </span>
+                            <div class="i-cm">
+                                <div class="i-left">
+                                    <div class="cat-sort">
+                                        <dl>
+                                            <dt>
+                                                <strong>
+                                                    <a class="trackref" href="">休闲零食</a>
+                                                </strong>
+                                            </dt>
+                                            <dd>
+                                                <a class="trackref" href="">肉类零食</a>
+                                                <a class="trackref" href="">蜜饯/干果</a>
+                                                <a class="trackref" href="">膨化食品</a>
+                                                <a class="trackref" href="">其他零食</a>
+                                                <a class="trackref" href="">节庆礼盒</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <strong>
+                                                    <a class="trackref" href="">坚果炒货</a>
+                                                </strong>
+                                            </dt>
+                                            <dd>
+                                                <a class="trackref" href="">扁桃仁/巴旦木</a>
+                                                <a class="trackref" href="">开心果</a>
+                                                <a class="trackref" href="">腰果</a>
+                                                <a class="trackref" href="">瓜子/瓜仁</a>
+                                                <a class="trackref" href="">花生</a>
+                                                <a class="trackref" href="">板栗</a>
+                                                <a class="trackref" href="">其他坚果</a>
+                                                <a class="trackref" href="">坚果组合装</a>
+                                                <a class="trackref" href="">坚果礼盒</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <strong>
+                                                    <a class="trackref" href="">糖果/巧克力</a>
+                                                </strong>
+                                            </dt>
+                                            <dd>
+                                                <a class="trackref" href="">巧克力</a>
+                                                <a class="trackref" href="">糖果</a>
+                                                <a class="trackref" href="">巧克力礼盒</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <strong>
+                                                    <a class="trackref" href="">饼干糕点</a>
+                                                </strong>
+                                            </dt>
+                                            <dd>
+                                                <a class="trackref" href="">饼干</a>
+                                                <a class="trackref" href="">曲奇</a>
+                                                <a class="trackref" href="">糕点</a>
+                                                <a class="trackref" href="">威化</a>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="i-img"><a href=""><img
+                                                src="https://ps.sfimg.cn/article/1570674351.jpg"></a></div>
+                                </div>
+                                <div class="i-right">
+                                    <span class="i-close"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <span class="i-master">
+                                <h3 class="dev">
+                                    <p class="oil"></p>
+                                    <a class="trackref" href="">粮油干货</a>
+                                </h3>
+                                <ul class="subCat">
+                                    <li><a href="">橄榄油</a></li>
+                                    <li><a href="">泰国米</a></li>
+                                    <li><a href="">枣</a></li>
+                                </ul>
+                                <s></s>
+                            </span>
+                            <div class="i-cm">
+                                <div class="i-left">
+                                    <div class="cat-sort">
+                                        <dl>
+                                            <dt>
+                                                <strong><a class="trackref" href="">食用油
+                                                    </a></strong>
+                                            </dt>
+                                            <dd>
+                                                <a class="trackref" href="">橄榄油</a>
+                                                <a class="trackref" href="">花生油</a>
+                                                <a class="trackref" href="">葵花籽油</a>
+                                                <a class="trackref" href="">其他食用油</a>
+                                                <a class="trackref" href="">礼盒</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <strong><a class="trackref" href="">米面杂粮</a></strong>
+                                            </dt>
+                                            <dd>
+                                                <a class="trackref" href="">大米</a>
+                                                <a class="trackref" href="">面粉</a>
+                                                <a class="trackref" href="">五谷杂粮</a>
+                                                <a class="trackref" href="">礼盒</a>
+                                                <a class="trackref" href="">卡券</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <strong><a class="trackref" href="">厨房调料</a></strong>
+                                            </dt>
+                                            <dd>
+                                                <a class="trackref" href="">酱油/醋</a>
+                                                <a class="trackref" href="">调味油/汁</a>
+                                                <a class="trackref" href="">调味料/粉/酱</a>
+                                                <a class="trackref" href="">调味酱/番茄酱</a>
+                                                <a class="trackref" href="">果酱/涂抹酱</a>
+                                                <a class="trackref" href="">咖喱/味噌</a>
+                                                <a class="trackref" href="">鸡精/盐/糖</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <strong><a class="trackref" href="">南北干货</a></strong>
+                                            </dt>
+                                            <dd>
+                                                <a class="trackref" href="">枣</a>
+                                                <a class="trackref" href="">菌菇</a>
+                                                <a class="trackref" href="">木耳/银耳</a>
+                                                <a class="trackref" href="">桂圆</a>
+                                                <a class="trackref" href="">枸杞/莲子</a>
+                                                <a class="trackref" href="">海产干货</a>
+                                                <a class="trackref" href="">滋补品</a>
+                                                <a class="trackref" href="">菜干/粉丝</a>
+                                                <a class="trackref" href="">汤料</a>
+                                                <a class="trackref" href="">其他</a>
+                                                <a class="trackref" href="">礼盒</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <strong><a class="trackref" href="">方便速食</a></strong>
+                                            </dt>
+                                            <dd>
+                                                <a class="trackref" href="">面条</a>
+                                                <a class="trackref" href="">意大利面</a>
+                                                <a class="trackref" href="">方便面</a>
+                                                <a class="trackref" href="">罐头</a>
+                                                <a class="trackref" href="">其他</a>
+                                            </dd>
+                                        </dl>
+
+                                    </div>
+                                    <div class="i-img"><a href=""><img
+                                                src="https://ps.sfimg.cn/article/1570674351.jpg"></a></div>
+                                </div>
+                                <div class="i-right">
+                                    <span class="i-close"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <span class="i-master">
+                                <h3 class="dev">
+                                    <p class="tea"></p>
+                                    <a class="trackref" href="">冲调茶饮</a>
+                                </h3>
+                                <ul class="subCat">
+                                    <li><a href="">蜂蜜</a></li>
+                                    <li><a href="">咖啡</a></li>
+                                    <li><a href="">麦片</a></li>
+                                    <li><a href="">茗茶</a></li>
+                                </ul>
+                                <s></s>
+                            </span>
+                            <div class="i-cm">
+                                <div class="i-left">
+                                    <div class="cat-sort">
+                                        <dl>
+                                            <dt>
+                                                <strong><a class="trackref" href="">休闲冲饮</a></strong>
+                                            </dt>
+                                            <dd>
+                                                <a class="trackref" href="">蜂蜜/果酱</a>
+                                                <a class="trackref" href="">麦片</a>
+                                                <a class="trackref" href="">成人奶粉</a>
+                                                <a class="trackref" href="">冲饮谷物</a>
+                                                <a class="trackref" href="">谷物粉</a>
+                                                <a class="trackref" href="">柚子茶</a>
+                                                <a class="trackref" href="">花茶</a>
+                                                <a class="trackref" href="">黑糖</a>
+                                                <a class="trackref" href="">其它</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <strong><a class="trackref" href="">咖啡/伴侣</a></strong>
+                                            </dt>
+                                            <dd>
+                                                <a class="trackref" href="">速溶咖啡</a>
+                                                <a class="trackref" href="">咖啡粉/豆</a>
+                                                <a class="trackref" href="">可可粉</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <strong><a class="trackref" href="">进口茶</a></strong>
+                                            </dt>
+                                            <dd>
+                                                <a class="trackref" href="">西式茶</a>
+                                                <a class="trackref" href="">茶包</a>
+                                                <a class="trackref" href="">礼盒</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <strong><a class="trackref" href="">国产茗茶</a></strong>
+                                            </dt>
+                                            <dd>
+                                                <a class="trackref" href="">绿茶</a>
+                                                <a class="trackref" href="">红茶</a>
+                                                <a class="trackref" href="">黑茶</a>
+                                                <a class="trackref" href="">青茶</a>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="i-img">
+                                        <a href="">
+                                            <img src="https://ps.sfimg.cn/article/1570674351.jpg">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="i-right">
+                                    <span class="i-close"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <span class="i-master">
+                                <h3 class="dev">
+                                    <p class="health"></p>
+                                    <a class="trackref" href="">优选国际</a>
+                                </h3>
+                                <ul class="subCat">
+                                    <li><a href="">奶粉</a></li>
+                                    <li><a href="">彩妆</a></li>
+                                    <li><a href="">营养</a></li>
+                                    <li><a href="">家居用品</a></li>
+                                </ul>
+                                <s></s>
+                            </span>
+                            <div class="i-cm">
+                                <div class="i-left">
+                                    <div class="cat-sort">
+                                        <dl>
+                                            <dt>
+                                                <strong>
+                                                    <a class="trackref" href="">母婴食品</a>
+                                                </strong>
+                                            </dt>
+                                            <dd>
+                                                <a class="trackref" href="">奶粉</a>
+                                                <a class="trackref" href="">一段</a>
+                                                <a class="trackref" href="">二段</a>
+                                                <a class="trackref" href="">三段</a>
+                                                <a class="trackref" href="">四段</a>
+                                                <a class="trackref" href="">羊奶粉</a>
+                                                <a class="trackref" href="">辅食</a>
+                                                <a class="trackref" href="">米粉/米糊</a>
+                                                <a class="trackref" href="">宝宝零食</a>
+                                                <a class="trackref" href="">DHA</a>
+                                                <a class="trackref" href="">钙铁锌</a>
+                                                <a class="trackref" href="">维生素</a>
+                                                <a class="trackref" href="">益生菌</a>
+                                                <a class="trackref" href="">鱼肝油</a>
+                                                <a class="trackref" href="">特殊配方奶粉</a>
+                                                <a class="trackref" href="">孕妇奶粉</a>
+                                                <a class="trackref" href="">其他</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <strong>
+                                                    <a" class="trackref" href="">母婴用品</a>
+                                                </strong>
+                                            </dt>
+                                            <dd>
+                                                <a class="trackref" href="">纸尿裤</a>
+                                                <a class="trackref" href="">拉拉裤</a>
+                                                <a class="trackref" href="">婴幼洗护</a>
+                                                <a class="trackref" href="">驱蚊防虫</a>
+                                                <a class="trackref" href="">喂养用品</a>
+                                                <a class="trackref" href="">妈妈用品</a>
+                                                <a class="trackref" href="">婴幼儿用品</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <strong>
+                                                    <a" class="trackref" href="">美妆个护</a>
+                                                </strong>
+                                            </dt>
+                                            <dd>
+                                                <a class="trackref" href="">面部护理</a>
+                                                <a class="trackref" href="">缤纷彩妆</a>
+                                                <a class="trackref" href="">口腔护理</a>
+                                                <a class="trackref" href="">美发护发</a>
+                                                <a class="trackref" href="">身体护理</a>
+                                                <a class="trackref" href="">沐浴用品</a>
+                                                <a class="trackref" href="">美容工具</a>
+                                                <a class="trackref" href="">女性护理</a>
+                                                <a class="trackref" href="">男性洗护</a>
+                                                <a class="trackref" href="">计生用品</a>
+                                                <a class="trackref" href="">其它</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <strong>
+                                                    <a" class="trackref" href="">营养保健</a>
+                                                </strong>
+                                            </dt>
+                                            <dd>
+                                                <a class="trackref" href="">滋补养生</a>
+                                                <a class="trackref" href="">营养补充</a>
+                                                <a class="trackref" href="">健康养护</a>
+                                                <a class="trackref" href="">女士保养</a>
+                                                <a class="trackref" href="">关爱老年</a>
+                                                <a class="trackref" href="">其他</a>
+                                                <a class="trackref" href="">礼盒</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <strong>
+                                                    <a class="trackref" href="">家居用品</a>
+                                                </strong>
+                                            </dt>
+                                            <dd>
+                                                <a class="trackref" href="">厨房用具</a>
+                                                <a class="trackref" href="">清洁用具</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <strong>
+                                                    <a class="trackref" href="">进口食品</a>
+                                                </strong>
+                                            </dt>
+                                            <dd>
+                                                <a class="trackref" href="">休闲零食</a>
+                                                <a class="trackref" href="">冲调饮品</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <strong>
+                                                    <a class="trackref" href="">手机数码</a>
+                                                </strong>
+                                            </dt>
+                                            <dd>
+                                                <a class="trackref" href="">手机</a>
+                                                <a class="trackref" href="">智能穿戴</a>
+                                                <a class="trackref" href="">智能家居系统</a>
+                                                <a class="trackref" href="">无线音箱</a>
+                                                <a class="trackref" href="">时尚影音</a>
+                                                <a class="trackref" href="">其它手机配件</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <strong>
+                                                    <a class="trackref" href="">电脑办公</a>
+                                                </strong>
+                                            </dt>
+                                            <dd>
+                                                <a class="trackref" href="">笔记本</a>
+                                                <a class="trackref" href="">平板电脑</a>
+                                                <a class="trackref" href="">早教益智</a>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="i-img">
+                                        <a href="">
+                                            <img src="https://ps.sfimg.cn/article/1570674351.jpg">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="i-right">
+                                    <span class="i-close"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- menufloat -->
+            <div class="menu1">
+                <ul>
+                    <li><a href="" class="trackref btndown">首页</a></li>
+                    <li id="cat2"><a href="">优选国际</a></li>
+                    <li id="cat3"><a href="">企业专区</a></li>
+                    <li><a href="">优选会员</a></li>
+                    <li class="ad">
+                        <a class="trackref" href="">
+                            <img alt="优选卡 送健康"
+                                src="http://002.sfimg.cn/web/7a80fda9/7a80fda907bf5107f6967add2a304a51.jpg" width="196"
+                                height="38">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <span class="clear"></span>
+        </div>
+    </div>
+    <!------------------------------------- ↑mainNav↑ --------------------------------->
+
+    <!------------------------------------- ↓首屏轮播图↓ --------------------------------->
+    <div class="slide_show" id="slide_show">
+        <div class="indexW">
+            <!-- 轮播图 -->
+            <div id="index_slide" class="slide_wrap">
+                <ol>
+                    <!-- <li>
+                        <a class="fore_pic trackref" href="">
+                            <img id="lunbo_1" alt="" src="http://003.sfimg.cn/web//b94df6a8/b94df6a82a6530ada97aa553b100d2ca.jpg">
+                        </a>
+                    </li> -->
+                </ol>
+            </div>
+            <!-- 右边的图 -->
+            <div class="rSide">
+                <a class="a-img r-img1 trackref" href="">
+                    <img alt="" src="http://001.sfimg.cn/web/a189d0c4/a189d0c4c54cd94996d86dd556c27ff8.jpg">
+                    <div class="rmask"></div>
+                </a>
+                <a class="a-img r-img2 trackref" href="">
+                    <img alt="" src="http://002.sfimg.cn/web/d422354f/d422354fa682f0f9dd75f99073d171b9.jpg">
+                    <div class="rmask"></div>
+                </a>
+                <a class="a-img r-img3 trackref" href="">
+                    <img alt="" src="http://002.sfimg.cn/web/d422354f/d422354fa682f0f9dd75f99073d171b9.jpg">
+                    <div class="rmask"></div>
+                </a>
+            </div>
+        </div>
+        <!-- 小圆点 -->
+        <ul class="none" id="lunboNum">
+            <li class="cur">1</li>
+            <li class="">2</li>
+            <li class="">3</li>
+            <li class="">4</li>
+            <li class="">5</li>
+            <li class="">6</li>
+            <li class="">7</li>
+            <li class="">8</li>
+        </ul>
+    </div>
+    <!------------------------------------- ↑首屏轮播图↑ -------------------------------->
+
+    <!------------------------------------- ↓优选必买↓ ---------------------------------->
+    <div class="indexW mt1">
+        <div class="bestbuy">
+            <!-- ↓口碑甄选↓  -->
+            <div class="b_left">
+                <h2>优选必买<span></span></h2>
+                <ul class="bbig" id="bigPerfect">
+                    <!-- <li class="price_list0">
+                        <a class="a_buy" href="" title="">
+                            国窖1573 52° 500ml
+                        </a>
+                        <div class="a_price">
+                            <span><i>￥</i>49.9</span>
+                            <span><b>会员价</b><i>￥</i>48.8</span>
+                        </div>
+                        <a class="trackref" href="" title="">
+                            <img src="http://pic.sfimg.cn/adsSaleGoodsPic/01c70d923ec04c2ed823d36be1902663.png" class="lazy" data="" alt="">
+                        </a>
+                        <div class="bbtn">
+                            <a href="">加入购物车</a>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+            <!-- ↑口碑甄选↑ -->
+            <div class="rSide1">
+                <div class="rImg2">
+                    <a class="trackref" href="">
+                        <img salt="国货大赏  智能数码大放价" src="http://003.sfimg.cn/web/5a9af840/5a9af840c8bd7c0041df61a6e1ab3394.jpg">
+                    </a>
+                </div>
+                <div class="sfNews">
+                    <div class="rTitle">
+                        <h2>优选快报</h2>
+                        <a href="" class="more">更多&gt;</a>
+                    </div>
+                    <ul>
+                        <li><a href="" class="red trackref" title="2019年国庆大阅兵与“国庆节”假期时效">2019年国庆大阅兵与“国庆节”假期时效</a></li>
+                        <li><a href="" class="red trackref" title="关于建国70周年庆演练北京市交通管制通知">关于建国70周年庆演练北京市交通管制通知</a></li>
+                        <li><a href="" class="red trackref" title="味库海鲜专场活动中奖名单">味库海鲜专场活动中奖名单</a></li>
+                        <li><a href="" class="red trackref" title="关于建国70周年庆彩排演练活动对北京地区">关于建国70周年庆彩排演练活动对北京地区</a></li>
+                        <li><a href="" class="red trackref" title="圣农专场活动中奖名单">圣农专场活动中奖名单</a></li>
+                        <li><a href="" class="trackref" title="顺丰优选客户购物体验问卷">顺丰优选客户购物体验问卷</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="clr"></div>
+    </div>
+    <!------------------------------------- ↑优选必买↑ ---------------------------------->
+
+    <!-------------------------------------↓floor1↓------------------------------------->
+    <div class="indexW mt2 fresh">
+        <div class="category">
+            <ul class="mTitle">
+                <li>
+                    <div class="cir"></div>
+                    <h2>
+                        <em></em>
+                        <a class="trackref" href="">水果</a>
+                        &nbsp;&nbsp;
+                        <a class="trackref" href="">蔬菜</a>
+                    </h2>
+                </li>
+            </ul>
+            <div class="lCont">
+                <a class="trackref" href="">
+                    <img alt="" class="lazy" data="" src="http://004.sfimg.cn/web/afd5c457/afd5c45770a0bd2f0474fd26e1888321.jpg" style="display: inline;">
+                </a>
+            </div>
+        </div>
+        <div class="sfRight">
+            <div class="subCont">
+                <ul class="pList" id="floor-gap-1">
+                    <!-- <li class="price_list1">
+                        <div class="pImg pImg_vip">
+                            <a href="" title="果缤纷 广西精选百香果15粒 买一赠一 实发30粒 单果：50~75g">
+                                <img class="lazy" data="" alt="" src="http://p02.sfimg.cn/2019/4400341069/middle_w_4400341069_1_2/160x160.jpg" style="display: block;">
+                            </a>
+                            <div class="gBtn">
+                                <a href="">加入购物车</a>
+                            </div>
+                        </div>
+                        <div class="title-a">
+                            <a href="" title="果缤纷 广西精选百香果15粒 买一赠一 实发30粒 单果：50~75g">
+                                果缤纷 广西精选百香果15粒 买一赠一实发30粒单果：50~75g
+                            </a>
+                        </div>
+                        <div class="a_price f_price">
+                            <span><i>￥</i>39.9</span>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+            <div class="redge">
+                <ul class="rHot">
+                    <li><a class="trackref" href="">瓜类</a></li>
+                    <li><a class="trackref" href="">梨</a></li>
+                    <li><a class="trackref" href="">苹果</a></li>
+                    <li><a class="trackref" href="">榴莲</a></li>
+                    <li><a class="trackref" href="">芒果</a></li>
+                    <li><a class="trackref" href="">桃</a></li>
+                    <li><a class="trackref" href="">橙</a></li>
+                    <li><a class="trackref" href="">枣</a></li>
+                    <li><a class="trackref" href="">火龙果</a></li>
+                </ul>
+                <div class="clr"></div>
+                <div class="rimg">
+                    <a class="ht1 trackref" href="">
+                        <img alt="" class="lazy" data=""
+                            src="http://002.sfimg.cn/web/765a2d3f/765a2d3f8a5804811d984e3339e40f77.jpg"
+                            style="display: inline;">
+                    </a>
+                    <div class="rbutton">
+                        <a href=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="clr"></span>
+    </div>
+    <!-------------------------------------↑floor1↑------------------------------------->
+
+    <!-------------------------------------↓楼层banner↓--------------------------------->
+    <div class="indexW mt2 full_ad" style="width:1190px;padding-left:10px;">
+        <a class="trackref" href="">
+            <img class="lazy" data="" src="http://004.sfimg.cn/web/6a7470f9/6a7470f9e1fd81c6c46d219aecb37f9c.jpg" style="display: inline;">
+        </a>
+    </div>
+    <!-------------------------------------↑楼层banner↑--------------------------------->
+
+    <!-------------------------------------↓为你推荐↓----------------------------------->
+    <div class="indexW mt2 promote">
+        <div class="top"><i></i></div>
+        <ul class="ptList clearfix" id="guess_you_like">
+            <!-- <li class="price_list2">
+                <div class="pImg pImg_vip">
+                    <a href="" title="参之源 官栈系列冰糖燕窝饮品 150g*3">
+                        <img class="lazy" data="" src="http://p02.sfimg.cn/2018/1400249081/middle_1400249081_0_01/210x210.jpg" style="display: block;">
+                    </a>
+                    <div class="p-btn">
+                        <a href="">加入购物车</a>
+                    </div>
+                </div>
+                <div class="title-a">
+                    <a href="" title="参之源 官栈系列冰糖燕窝饮品 150g*3">参之源 官栈系列冰糖燕窝饮品 150g*3</a>
+                </div>
+                <div class="a_price f_price">
+                    <span><i>￥</i>99</span>
+                </div>
+            </li> -->
+        </ul>
+    </div>
+    <!-------------------------------------↑为你推荐↑----------------------------------->
+
+    <!-------------------------------------↓已经没有了↓--------------------------------->
+    <div class="promote-end" id="loading_more" style="display: block;">
+        <div class="t1"></div>
+        <div class="t2">已经没有了</div>
+    </div>
+    <!-------------------------------------↑已经没有了↑--------------------------------->
+
+    <!-- ↓底部文章↓ -->
+    <div class="indexW mt2 textlist">
+        <div class="zhiwei">
+            <div class="caption">
+                <p>优选味道</p>
+            </div>
+            <div class="slide">
+                <ul style="width: 510px;">
+                    <!-- <li>
+                        <a class="trackref" href="" title="醍醐味">
+                            <img data="" class="lazy"
+                                src="http://004.sfimg.cn/web/1f2564d9/1f2564d9772bf819d3359b794765262c.jpg"
+                                style="display: inline;">
+                        </a>
+                    </li> -->
+                </ul>
+                <a href="" class="btn_next"><s></s></a>
+                <a href="" class="btn_prev"><s></s></a>
+                <div class="slideControls">
+                    <span class="cur">1</span>
+                    <span>2</span>
+                </div>
+            </div>
+            <div class="info">
+                <p><a class="trackref" href="" title="花草茶 来自大自然的恩惠">花草茶 来自大自然的恩惠</a></p>
+                <p><a class="trackref" href="" title="酒桌礼仪：斟酒的讲究">酒桌礼仪：斟酒的讲究</a></p>
+                <p><a class="trackref" href="" title="30分钟 暖心慢炖红酒鸡腿">30分钟 暖心慢炖红酒鸡腿</a></p>
+                <p><a class="trackref" href="" title="拉弗尔庄园（花庄）">拉弗尔庄园（花庄）</a></p>
+                <p><a class="trackref" href="" title="喜欢甜酒 何罪之有？">喜欢甜酒 何罪之有？</a></p>
+            </div>
+        </div>
+        <div class="share">
+            <div class="caption">
+                <p>热门晒单</p>
+            </div>
+            <div class="scrollbox">
+                <ul id="toplist">
+                    <!-- <li>
+                        <div class="share_c">
+                            <div class="l">
+                                <a href="" title="">
+                                    <img src="http://pic.sfimg.cn/910031ab/small_910031ab30b319262a45861d89126863.jpg"
+                                        alt="Swisse 【保税仓】钙片加维生素D 150粒*5">
+                                </a>
+                            </div>
+                            <div class="r">
+                                <p><a href="" title="">Swisse 【保税仓】钙片加维生素D150粒*5</a></p>
+                                <p class="s_title"><a class="s_content" href="">“趁优惠，囤多几瓶，和闺蜜一起分”</a></p>
+                            </div>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+        <div class="youpin">
+            <div class="ucaption">
+                <p>发现优品</p>
+                <h2><a></a></h2>
+            </div>
+            <div class="upic" id="findGoods">
+            </div>
+            <div class="clear"></div>
+            <div class="mailDY">
+                <div class="mailDYitem" id="mailDYitem">
+                    <span><input type="text" value="请填写邮箱订阅促销" class="i" id="footermail"></span>
+                    <span class="ftitle">
+                        <div id="store-selector1">
+                            <div style="line-height:22px;" class="text">
+                                <div id="showarea1" title="订阅区域">北京</div><b></b>
+                            </div>
+                            <div class="content">
+                                <div class="m SF-stock" id="SF-stock1">
+                                    <div class="mt">
+                                        <ul class="tab">
+                                            <li id="foot_province" class="curr">
+                                                <a class="hover" href=""><em>北京</em><i></i></a>
+                                            </li>
+                                            <li id="foot_city">
+                                                <a href="" title="请选择"><em>请选择</em><i></i></a>
+                                            </li>
+                                        </ul>
+                                        <div class="stock-line"></div>
+                                    </div>
+                                    <div id="foot_first" class="mc">
+                                        <ul id="foot_one" class="area-list">
+                                            <li><a href="">北京</a></li>
+                                            <li><a href="">天津</a></li>
+                                            <li><a href="">上海</a></li>
+                                            <li><a href="">重庆</a></li>
+                                            <li><a href="">广东省</a></li>
+                                            <li><a href="">浙江省</a></li>
+                                            <li><a href="">江苏省</a></li>
+                                            <li><a href="">福建省</a></li>
+                                            <li><a href="">辽宁省</a></li>
+                                            <li><a href="">吉林省</a></li>
+                                            <li><a href="">黑龙江省</a></li>
+                                            <li><a href="">江西省</a></li>
+                                            <li><a href="">河北省</a></li>
+                                            <li><a href="">河南省</a></li>
+                                            <li><a href="">山东省</a></li>
+                                            <li><a href="">山西省</a></li>
+                                            <li><a href="">湖北省</a></li>
+                                            <li><a href="">湖南省</a></li>
+                                            <li><a href="">云南省</a></li>
+                                            <li><a href="">海南省</a></li>
+                                            <li><a href="">陕西省</a></li>
+                                            <li><a href="">四川省</a></li>
+                                            <li><a href="">安徽省</a></li>
+                                            <li><a href="">贵州省</a></li>
+                                            <li><a href="">甘肃省</a></li>
+                                            <li><a href="">青海省</a></li>
+                                            <li><a href="">广西</a></li>
+                                            <li><a href="">内蒙古</a></li>
+                                            <li><a href="">宁夏</a></li>
+                                            <li><a href="">新疆</a></li>
+                                            <li><a href="">西藏</a></li>
+                                        </ul>
+                                    </div>
+                                    <div id="foot_sec" class="mc">
+                                        <ul id="foot_two" class="area-list">
+                                            <li><a href="">北京市</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="close"></div>
+                        </div>
+                        <div class="clear"></div>
+                    </span>
+                    <span><a class="btn" href=""></a></span>
+                    <span><a class="dy trackref" href=""> 订阅更多&gt;</a></span>
+                    <div class="clear"></div>
+                    <!-- 已订阅样式 <div class="ydy">您已订阅过，无需重复订阅</div>-->
+                    <!-- 邮箱格式不正确样式 -->
+                    <div style="display:none" id="emailMsg" class="emailerr">邮箱格式不正确</div>
+                    <div id="mailBox"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ↑底部文章↑ -->
+
+    <!-------------------------------------↓footer↓------------------------------------->
+    <div id="footer">
+        <div class="footer_zd">
+            <ul>
+                <li class="quanqiu"></li>
+                <li class="chandi"></li>
+                <li class="qcll"></li>
+                <li class="sfzd"></li>
+            </ul>
+        </div>
+        <div class="foot">
+            <div class="pageFooter">
+                <div class="middle">
+                    <ul>
+                        <li class="kefu">9533858</li>
+                        <li>周一至周日09:00-20:00</li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <ul>
+                        <li class="title">购物指南</li>
+                        <li><a href="" target="_blank">积分制度</a></li>
+                        <li><a href="" target="_blank">会员介绍</a></li>
+                        <li><a href="" target="_blank">购物流程</a></li>
+                        <li><a href="" target="_blank">常见问题</a></li>
+                        <li><a href="" target="_blank">在线客服</a></li>
+                    </ul>
+                    <ul>
+                        <li class="title">配送服务</li>
+                        <li><a href="" target="_blank">配送政策</a></li>
+                        <li><a href="" target="_blank">开箱验货</a></li>
+                        <li><a href="" target="_blank">配送运费</a></li>
+                        <li><a href="" target="_blank">配送范围</a></li>
+                    </ul>
+                    <ul>
+                        <li class="title">支付方式</li>
+                        <li><a href="" target="_blank">货到付款</a></li>
+                        <li><a href="" target="_blank">在线支付</a></li>
+                        <li><a href="" target="_blank">优选卡</a></li>
+                        <li><a href="" target="_blank">发票制度</a></li>
+                    </ul>
+                    <ul>
+                        <li class="title">售后服务</li>
+                        <li><a href="" target="_blank">退款说明</a></li>
+                        <li><a href="" target="_blank">退换货流程</a></li>
+                        <li><a href="" target="_blank">退换货政策</a></li>
+                        <li><a href="l" target="_blank">隐私条款</a></li>
+                    </ul>
+                    <ul class="sj">
+                        <li class="title">商家中心</li>
+                        <li><a href="" target="_blank">商家规则</a></li>
+                        <li><a href="" target="_blank">食品安全规范</a></li>
+                        <li><a href="" target="_blank">委托管理创业招募</a></li>
+                    </ul>
+                </div>
+                <div class="left">
+                    <ul class="f_ios">
+                        <li><a href="" target="_blank">手机客户端</a></li>
+                        <li><span></span></li>
+                    </ul>
+                    <ul class="f_wx">
+                        <li>官方微信</li>
+                        <li><span></span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="bottom">
+                <!-- 可信网站图片 -->
+                <div class="_bottom_kx">
+                    <span>
+                        <a href="" target="_blank">
+                            <img style="border: 0px; position: absolute; top: 0px; left: 0px;" src="https://rr.knet.cn/static/images/logo/credit.png">
+                        </a>
+                    </span>
+                </div>
+                <!-- 诚信认证 -->
+                <div class="_bottom_kx" style="margin-left: 5px;">
+                    <a target="_blank">
+                        <img src="http://i.sfimg.cn/html/images/bottom_sm.png">
+                    </a>
+                </div>
+                <!-- 品牌官网图片 -->
+                <div class="_bottom_kx" style="margin-left: 5px;">
+                    <a href="" target="_blank">
+                        <img src="http://i.sfimg.cn/html/images/bottom_sm.png">
+                    </a>
+                </div>
+                <div class="clear1"></div>
+                <div class="siteinfo">
+                    <p>
+                        <span><a href="" target="_blank">关于我们</a></span>
+                        <span><a href="" target="_blank">联系我们</a></span>
+                        <span><a href="" target="_blank">招聘人才</a></span>
+                        <span><a href="" target="_blank">友情链接</a></span>
+                        <span>Copyright© 顺丰优选 sfbest.com 版权所有</span>
+                    </p>
+                    <p>
+                        <span>京公网安备11010502026831号</span>
+                        <span><a class="beian" target="_blank" href="">京ICP证150325号</a></span>
+                        <span><a class="beian" target="_blank" href="">食品经营许可证JY11113080533669号</a></span>
+                        <span><a class="beian" target="_blank" href="">企业营业执照</a></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------------↑footer↑------------------------------------->
+
+    <!-------------------------------------↓侧边导航↓------------------------------------->
+    <div class="side-wrap">
+        <div class="side-panel">
+            <div class="side-c">
+                <a href="" target="_blank" class="s-kefu"></a>
+            </div>
+            <div class="side-c ">
+                <a href="" target="_blank" class="side_v"></a>
+            </div>
+            <div class="side-c" id="side_cart">
+                <a href="" target="_blank" class="s-cart"></a>
+                <span class="s-cart-num s-cart-add">2</span>
+            </div>
+            <div class="side-c" id="side_guang">
+                <a href="" class="s-guang"></a>
+            </div>
+            <div class="side-c" id="side_app">
+                <a href="" target="_blank" class="s-app">下载APP</a>
+            </div>
+            <div class="side-c" id="side_promote">
+                <a href="" class="s-promote">为你推荐</a>
+            </div>
+            <div class="side-c bToTop">
+                <a href="" class="s-top"></a>
+            </div>
+        </div>
+        <div class="cart-wrap">
+            <div class="cart-shopping" style="bottom: 0px;">
+                <div class="cart-list">
+                    <div class="cart-num">
+                        <span class="cart-num-icon">您有<span id="add-num">1</span>件商品成功加入购物车！</span>
+                    </div>
+                    <div id="list_cart" class="floatcar">
+                        <div id="list_cart" class="floatcar">
+                            <div class="btnhover"></div>
+                            <div class="title">冷链配送，顺丰到家！</div>
+                            <ul class="tEvent">
+                                <li>
+                                    <div class="l">
+                                        <a href="" target="_blank">
+                                            <img src="http://p02.sfimg.cn/2019/2300334509/thumb_w_2300334509_1_1.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="c">
+                                        <a href="" title="" target="_blank">小熊 电热饭盒三层可插电保温自动加热蒸煮带饭锅煲1人上班族神器 2台DFH-S2358 2L</a>
+                                        <b>2.7kg</b>
+                                    </div>
+                                    <div class="r">
+                                        <font>¥198</font> ×1<br>
+                                        <a href="">删除</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="total">
+                                <p style="width:210px;">共有 <font id="listCartNum"> 2 </font> 件商品<br>总重 <font id="listCartNum">2.70</font> kg（含包装）</p>
+                                <p style="width:120px;text-align:right;">共计：<font>¥198</font><br><a href="http://cart.sfbest.com" class="submit5">去购物车结算</a></p>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="cart-arr"></div>
+                </div>
+            </div>
+            <div class="appInfo">
+                <div class="appDown">
+                    <div class="appItem">
+                        <div class="sf-client">
+                            <span class="client-img"></span>
+                            <i></i>
+                            <div class="client-txt">
+                                <em>扫描我，即可下载</em>
+                                <strong>顺丰优选客户端</strong>
+                            </div>
+                        </div>
+                        <div class="client-promo"><a href="" target="_blank"></a></div>  
+                        <div class="cart-arr"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="guang" id="history_con">
+                <div class="history">
+                    <div class="his-list" id="history_con">
+                        <div class="cart-num">您的浏览记录</div>
+                        <div class="floatcar">
+                            <ul>
+                                <li>
+                                    <div class="l">
+                                        <a href="" target="_blank"><img src="http://p02.sfimg.cn/2017/4400275821/thumb_4400275821_1_1.jpg"></a>
+                                    </div>
+                                    <div class="c">
+                                        <a href="" target="_blank">西州蜜瓜1个装 3~4斤</a>
+                                    </div>
+                                    <div class="r">
+                                        <font>¥59</font><br><a href="">加入购物车</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="cart-arr"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
