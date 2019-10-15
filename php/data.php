@@ -9,6 +9,7 @@ $result5=$conn->query("select * from lunbo");
 $result6=$conn->query("select * from share");
 $result7=$conn->query("select * from tuijian");
 $result8=$conn->query("select * from youxuan");
+$result9=$conn->query("select * from detail");
 
 $arrdata1=array();
 for($i=0;$i<$result1->num_rows;$i++){
@@ -42,6 +43,10 @@ $arrdata8=array();
 for($i=0;$i<$result8->num_rows;$i++){
     $arrdata8[$i]=$result8->fetch_assoc();
 }
+$arrdata9=array();
+for($i=0;$i<$result9->num_rows;$i++){
+    $arrdata9[$i]=$result9->fetch_assoc();
+}
 
 class data{
 }
@@ -54,5 +59,6 @@ $news->lunbo=$arrdata5;
 $news->share=$arrdata6;
 $news->tuijian=$arrdata7;
 $news->youxuan=$arrdata8;
+$news->detail=$arrdata9;
 
 echo json_encode($news);

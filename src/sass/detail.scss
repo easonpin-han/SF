@@ -31,7 +31,7 @@
     display: inline-block;
     width: 12px;
     height: 12px;
-    background: url(images/kefu_copy.png) left top no-repeat;
+    background: url(../img/kefu_copy.png) left top no-repeat;
     position: relative;
     right: 2px;
     top: 3px;
@@ -74,6 +74,21 @@
     height: 90px;
     margin-bottom: 10px;
     border-bottom: 3px solid #dddddd;
+}
+.yj {
+    position: absolute;
+    top: 95px;
+    left: 440px;
+    font-size: 12px;
+    color: #fff;
+    text-decoration: line-through;
+}
+.daojishi {
+    float: right;
+    padding: 10px 20px 0 0;
+    color: white;
+    position: absolute;
+    right: 0;
 }
 .priceBox {
     float: left;
@@ -120,7 +135,7 @@
 .boxWb {
     width: 5px;
     height: 96px;
-    background: url(images/productinfo.png) no-repeat -271px -121px;
+    background: url(../img/productinfo.png) no-repeat -271px -121px;
     position: absolute;
     right: -5px;
 }
@@ -163,7 +178,7 @@
     font-weight: normal;
 }
 #store-selector .text b, #store-selector_sfv .text b, #store-selector1 .text b {
-    background: url(images/indexImg20130307.png) no-repeat -386px -2px;
+    background: url(../img/indexImg20130307.png) no-repeat -386px -2px;
     display: block;
     height: 24px;
     overflow: hidden;
@@ -283,7 +298,7 @@
     left: 18px;
     width: 22px;
     height: 20px;
-    background: url(images/productinfo.png) no-repeat -269px -72px;
+    background: url(../img/productinfo.png) no-repeat -269px -72px;
     display: block;
 }
 .quickBuy a {
@@ -307,7 +322,7 @@
     width: 90px;
     height: 40px;
     border: 1px solid #ddd;
-    background: #fbfbfb url(images/phone.jpg) 10px center no-repeat;
+    background: #fbfbfb url(../img/phone.jpg) 10px center no-repeat;
     padding-left: 34px;
     padding-top: 3px;
     color: #565656;
@@ -381,10 +396,10 @@
     overflow: hidden;
 }
 #btn-forward b {
-    background: url(images/productinfo.png) no-repeat -49px 0;
+    background: url(../img/productinfo.png) no-repeat -49px 0;
 }
 #btn-backward b {
-    background: url(images/productinfo.png) no-repeat -49px -10px;
+    background: url(../img/productinfo.png) no-repeat -49px -10px;
 }
 #pic-list .pic-items li {
     font-size: 0;
@@ -434,7 +449,7 @@ span.bds_more,.bds_tools a {
     padding-top: 6px;
     padding-bottom: 3px;
     padding-left: 22px;
-    background: url(images/is.png) no-repeat 0 5px;
+    background: url(../img/is.png) no-repeat 0 5px;
 }
 .bds_qzone {
     background-position: 0 -75px!important;
@@ -448,7 +463,7 @@ span.bds_more,.bds_tools a {
     padding: 8px 0 0 20px;
     color: #6c9c0a;
     cursor: pointer;
-    background: url(images/productinfo.png) no-repeat -68px 11px;
+    background: url(../img/productinfo.png) no-repeat -68px 11px;
     height: 20px;
 }
 .pCollect a {
@@ -538,7 +553,7 @@ span.bds_more,.bds_tools a {
     position: absolute;
     width: 13px;
     height: 14px;
-    background: url(images/productinfo.png) no-repeat -173px -28px;
+    background: url(../img/productinfo.png) no-repeat -173px -28px;
     top: 5px;
     left: 5px;
 }
