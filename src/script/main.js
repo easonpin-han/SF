@@ -1,1 +1,1 @@
-require(['render','effect']);
+require(['render']);

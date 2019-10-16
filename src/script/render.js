@@ -131,9 +131,9 @@ define([],function(){
                     this.imgli=$('.slide_wrap ol li');
                 }
                 Lunbo.prototype.init=function(){
-                    this.slide();
+                    this.slidelunbo();
                 };
-                Lunbo.prototype.slide=function(){
+                Lunbo.prototype.slidelunbo=function(){
                     let _this=this;
                     let $num=0;
                     let timer=null;
@@ -161,7 +161,49 @@ define([],function(){
                     },2000);
                 };
 
+                function Tab(){
+                    this.tabul=$('.slide ul');
+                    this.tabli=$('.slide ul li');
+                    this.right=$('.btn_next');
+                    this.left=$('.btn_prev');
+                    this.tabbtn=$('.slideControls span');
+                }
+                Tab.prototype.init=function(){
+                    this.tabswitch();
+                };
+                Tab.prototype.tabswitch=function(){
+                    let _this=this;
+                    let $num=0;
+                    this.tabbtn.on('mouseenter',function(){
+                        $(this).addClass('cur').siblings('span').removeClass('cur');
+                        _this.tabul.animate({
+                            left:-170*($(this).index())
+                        });
+                    });
+                    this.right.on('click',function(){
+                        $num++;
+                        $('.clli').remove();
+                        let cloneli= _this.tabli.eq(0).clone(true);
+                        cloneli.addClass('clli');
+                        if($num<=1){
+                            _this.tabbtn.eq($num).addClass('cur').siblings('span').removeClass('cur');
+                            _this.tabul.animate({
+                                left:-170*($num)
+                            });
+                            cloneli.appendTo(_this.tabul);
+                        }else if($num>1){
+                            $num=0;
+                            _this.tabbtn.eq(0).addClass('cur').siblings('span').removeClass('cur');
+                            _this.tabul.animate({
+                                left:-340
+                            });
+                            _this.tabul.css('left','0');
+                        }
+                    });
+                }
+
                 new Lunbo().init();
+                new Tab().init();
             });
         })()
     }

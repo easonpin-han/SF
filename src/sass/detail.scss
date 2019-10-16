@@ -68,7 +68,15 @@
 .pItemsName h1 {
     float: left;
     color: #191c1f;
+    font-size: 18px;
+    font-family: 微软雅黑;
+    line-height: 30px;
 }
+// .pItemsName .cm h1, .pItemsName strong {
+//     font-size: 18px;
+//     font-family: 微软雅黑;
+//     line-height: 30px;
+// }=========
 .pItemsPrice {
     background-color: #fa8e19;
     height: 90px;
@@ -355,6 +363,35 @@
     width: 330px;
     height: 330px;
 }
+.jqZoomLens { //小放div
+    background-color: #fff;
+    cursor: move;
+    height: 50px;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    width: 50px;
+    z-index: 92;
+}
+.zoomdiv { //大放div
+    background: url(../img/loading.gif) no-repeat center center #FFFFFF;
+    border: 1px solid #E4E4E4;
+    display: none;
+    height: 410px;
+    left: 400px;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 410px;
+    z-index: 8;
+}
+.bigimg { //大放大图尺寸
+    height: 800px;
+    width: 800px;
+}
 /* --左边小图--- */
 #pic-list {
     height: 300px;
@@ -362,16 +399,28 @@
     position: relative;
     width: 50px;
     margin-right: 10px;
-    _display: inline;
     float: left;
     padding: 20px 0;
 }
-/* #pView #pic-list a.disabled {
+#pic-list .pic-items {
+    left: 0;
+    position: absolute;
+    top: 20px;
+}
+#pic-list .pic-items img.img-hover {
+    border: 1px solid #69af05;
+    padding: 0;
+}
+// =========
+#pView #pic-list a.disabled {
     cursor: default;
-} */
-/* #btn-forward.disabled b {
-    background: url(images/productinfo.png) no-repeat -30px 0;
-} */
+}
+#btn-forward .disabled{
+    background: url(../img/productinfo.png) no-repeat -30px 0;
+}
+#btn-bacward .disabled{
+    background: url(../img/productinfo.png) no-repeat -30px -10px;
+}
 #pic-list .btn-control {
     display: block;
     height: 20px;
@@ -383,7 +432,7 @@
 #btn-forward {
     top: 0;
 }
-#btn-backward {
+#btn-bacward {
     bottom: 0;
 }
 .btn-control b {
@@ -398,7 +447,7 @@
 #btn-forward b {
     background: url(../img/productinfo.png) no-repeat -49px 0;
 }
-#btn-backward b {
+#btn-bacward b {
     background: url(../img/productinfo.png) no-repeat -49px -10px;
 }
 #pic-list .pic-items li {

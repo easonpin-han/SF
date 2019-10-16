@@ -1,1 +1,1 @@
-"use strict";require(["render","effect"]);
+"use strict";require(["render"]);

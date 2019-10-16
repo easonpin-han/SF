@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/public.css">
     <link rel="stylesheet" href="css/detail.css">
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.js"></script>
-    <script src="https://cdn.bootcss.com/require.js/2.1.22/require.js" defer async="true" data-main="./script/main.js"></script>
+    <script src="https://cdn.bootcss.com/require.js/2.1.22/require.js" defer async="true" data-main="./script/detail.js"></script>
 </head>
 
 <body>
@@ -316,7 +316,7 @@
                             </div>
                             <div class="pBtn"><a><b></b>加入购物车</a></div>
                             <div class="pBtn quickBuy" title=""><a>一键购买</a></div>
-                            <div class="yj_time">预计发货时间：<br>2014-02-28 08:59</div>
+                            <!-- <div class="yj_time">预计发货时间：<br>2014-02-28 08:59</div> -->
                             <div class="phone_client" style="cursor: pointer;">
                                 <div>扫描下载客户端<br></div>
                             </div>
@@ -329,12 +329,17 @@
                     <div id="pView">
                         <div id="zoom-jpg">
                             <!-- <img alt="" width="330" height="330" src="http://p02.sfimg.cn/2019/2300334509/middle_w_2300334509_1_1.jpg"> -->
+                            <div class="jqZoomLens"></div>
+                            <!--  style="width: 206.25px; height: 136.125px;" -->
+                        </div>
+                        <div class="zoomdiv" style="width: 500px; height: 330px;">
+                            <!-- <img class="bigimg" src=""> -->
                         </div>
                         <div id="pic-list">
-                            <a href="" class="btn-control" id="btn-forward"><b></b></a>
+                            <a href="" class="btn-control" id="btn-forward"><b class="disabled"></b></a>
                             <a href="" class="btn-control" id="btn-bacward"><b></b></a>
                             <div class="pic-items" style="position: absolute; width: 50px; height: 300px; overflow: hidden;">
-                                <ul style="position: absolute; left: 0px; top: 0px; height: 360px;">
+                                <ul style="position: absolute; left: 0px; top: 0px;">
                                     <!-- <li>
                                         <img title="" alt="" src="http://p02.sfimg.cn/2019/2300334509/thumb_w_2300334509_1_6.jpg">
                                     </li> -->
