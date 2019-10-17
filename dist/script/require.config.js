@@ -1,0 +1,1 @@
+"use strict";require.config({urlArgs:"version=1.0_"+Math.random(),baseUrl:"https://cdnjs.cloudflare.com/ajax/libs/",paths:{jquery:"jquery/1.12.4/jquery.min",jqcookie:"jquery-cookie/1.4.1/jquery.cookie.min"}}),require(["jquery"],function(r){var e=r("#current-page").attr("target-module");e&&require([e],function(r){r.init()})});

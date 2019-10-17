@@ -70,6 +70,14 @@ gulp.task('babel', function () {
         .pipe(uglifyjs())
         .pipe(gulp.dest('dist/script/'));
 });
+gulp.task('babel2', function () {
+    return gulp.src('src/script/module/*.js')
+        .pipe(babel({//es6转es5
+            presets: ['es2015']
+        }))
+        .pipe(uglifyjs())
+        .pipe(gulp.dest('dist/script/module/'));
+});
 
 //6.png图片的压缩
 //图片压缩的插件：gulp-imagemin
@@ -83,6 +91,6 @@ gulp.task('runimg', function () {
 //最终监听
 //每一个任务先跑一次，再进行监听
 gulp.task('default',function(){
-    watch(['src/font/*','src/*.html','src/sass/*.scss','src/script/*.js','src/img/*.{png,jpg,gif,ico}'],gulp.parallel('copyfile','uglifyhtml','compilesass','babel','runimg'));
+    watch(['src/font/*','src/*.html','src/sass/*.scss','src/script/*.js','src/script/module*.js','src/img/*.{png,jpg,gif,ico}'],gulp.parallel('copyfile','uglifyhtml','compilesass','babel','babel2','runimg'));
 });
 

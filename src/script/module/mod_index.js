@@ -1,6 +1,6 @@
-define([],function(){
+define(['jquery'],function(){
     return{
-        render:(function(){
+        init:(function(){
             $.ajax({
                 url:'http://10.31.155.53/SF/php/data.php',
                 dataType:'json'
@@ -205,6 +205,6 @@ define([],function(){
                 new Lunbo().init();
                 new Tab().init();
             });
-        })()
+        })
     }
 });

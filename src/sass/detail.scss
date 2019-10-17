@@ -235,6 +235,56 @@
     position: relative;
     height: 45px;
 }
+// 点击加入购物车弹出的窗口
+#addcartbox{
+    position: absolute;
+    display: none;
+    // margin: 0 auto;
+}
+.pWindow {
+    width: 416px;
+    border: 1px solid #dbdbdb;
+    background-color: #ffffff;
+    position: absolute;
+    z-index: 999;
+}
+.pWindow .hd {
+    border-bottom: 1px solid #196247;
+    padding: 15px 10px 10px 80px;
+}
+#carwindow .cartItem .ct {
+    color: rgb(69, 64, 58);
+    font-family: 微软雅黑;
+    font-size: 18px;
+    margin-bottom: 5px;
+    line-height: 24px;
+}
+#carwindow .cartItem #showcart {
+    margin-bottom: 5px;
+}
+#carwindow .cartItem li {
+    overflow: hidden;
+}
+.pbtn4 {
+    background-color: #6c9c0a;
+    height: 24px;
+    line-height: 24px;
+    color: white;
+    float: left;
+    margin-right: 10px;
+    width: 90px;
+    text-align: center;
+}
+.pWindow .pClose {
+    background: url(../img/sf-stock.png) no-repeat 0 -70px;
+    height: 17px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 17px;
+    cursor: pointer;
+}
+// end点击加入购物车弹出的窗口
 .pAmount {
     width: 81px;
     float: left;
@@ -366,13 +416,13 @@
 .jqZoomLens { //小放div
     background-color: #fff;
     cursor: move;
-    height: 50px;
-    left: 0;
+    // height: 50px;
     opacity: 0.5;
     position: absolute;
+    left: 0;
     top: 0;
     visibility: hidden;
-    width: 50px;
+    // width: 50px;
     z-index: 92;
 }
 .zoomdiv { //大放div
@@ -391,6 +441,7 @@
 .bigimg { //大放大图尺寸
     height: 800px;
     width: 800px;
+    position: absolute;
 }
 /* --左边小图--- */
 #pic-list {

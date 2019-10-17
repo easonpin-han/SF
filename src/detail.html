@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/public.css">
     <link rel="stylesheet" href="css/detail.css">
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.js"></script>
-    <script src="https://cdn.bootcss.com/require.js/2.1.22/require.js" defer async="true" data-main="./script/detail.js"></script>
+    <script src="https://cdn.bootcss.com/require.js/2.1.22/require.js" id="current-page" defer async="true" data-main="script/require.config.js" target-module="script/module/mod_detail.js"></script>
 </head>
 
 <body>
@@ -301,6 +301,22 @@
                         <div class="dd"> ￥ <em>0</em> </div>
                     </div>
                     <div class="pItemsSend"></div>
+                    <!-- 点击加入购物车弹出窗口 -->
+                    <div id="addcartbox">
+                        <div id="carwindow" class="pWindow">
+                            <div class="hd">
+                                <ul class="cartItem">
+                                    <li class="ct">该商品已成功放入购物车！</li>
+                                    <li id="showcart">购物车共计5件商品，合计 515元</li>
+                                    <li>
+                                        <a href="index.html" class="pbtn4">&lt;&lt; 继续购物 </a>
+                                        <a href="gwc.html" class="pbtn4"> 去结算&gt;&gt; </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="pClose"></div>
+                        </div>
+                    </div>
                     <div class="pIemsChoose">
                         <div class="chooseType">
                             <ul></ul>
@@ -308,14 +324,18 @@
                         </div>
                         <div class="chooseBtns" style="z-index: 1;">
                             <div class="pAmount">
-                                <span><input type="text" class="text" value=""></span>
+                                <span><input type="text" class="text" value="1"></span>
                                 <span>
                                     <a href="" class="p-add">+</a>
-                                    <a href="" class="p-reduce">-</a>
+                                    <a href="" class="p-reduce disable">-</a>
                                 </span>
                             </div>
-                            <div class="pBtn"><a><b></b>加入购物车</a></div>
-                            <div class="pBtn quickBuy" title=""><a>一键购买</a></div>
+                            <div class="pBtn">
+                                <a href=""><b></b>加入购物车</a>
+                            </div>
+                            <div class="pBtn quickBuy" title="">
+                                <a>一键购买</a>
+                            </div>
                             <!-- <div class="yj_time">预计发货时间：<br>2014-02-28 08:59</div> -->
                             <div class="phone_client" style="cursor: pointer;">
                                 <div>扫描下载客户端<br></div>
@@ -432,13 +452,7 @@
             <span class="clear"></span>
         </div>
     </div>
-
-
-
-
-
-
-
+    
 
     <!-------------------------------------↓footer↓------------------------------------->
     <div id="footer">
