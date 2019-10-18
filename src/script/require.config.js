@@ -8,7 +8,7 @@ require.config({
     }
 });
 //加载模块
-require(["jquery"], function ($) {
+require(["jquery","jqcookie"], function ($) {
     var targetModule = $("#current-page").attr("target-module");
     //mod_index.js    mod_details.js
     if (targetModule) {//判断是否存在目标模块
